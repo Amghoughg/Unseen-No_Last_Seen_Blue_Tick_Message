@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SelectApps">
+
+    <ImageView
+        android:id="@+id/imgView_Substraction"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitStart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/subtraction2" />
+
+    <TextView
+        android:id="@+id/txtView_proceed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/proceed"
+        android:textColor="#000"
+        android:textSize="@dimen/_18ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView_SelectApps"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/selectApps"
+        android:textColor="#000"
+        android:textSize="@dimen/_9ssp"
+        app:layout_constraintEnd_toStartOf="@+id/imgView_Substraction"
+        app:layout_constraintStart_toStartOf="@+id/txtView_proceed"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_proceed" />
+
+    <ImageView
+        android:id="@+id/imgView_Path103"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scaleType="fitEnd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/path103" />
+
+    <TextView
+        android:id="@+id/txtView_Messenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/messenger"
+        android:textColor="#000"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/txtView_SelectApps"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_Substraction" />
+
+    <TextView
+        android:id="@+id/txtView_Instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/instagram"
+        android:textColor="#000"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/txtView_Messenger"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_Messenger" />
+
+    <TextView
+        android:id="@+id/txtView_Skype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/skype"
+        android:textColor="#000"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/txtView_Instagram"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_Instagram" />
+
+    <TextView
+        android:id="@+id/txtView_Viber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/viber"
+        android:textColor="#000"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/txtView_Skype"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_Skype" />
+
+    <TextView
+        android:id="@+id/txtView_WhatsApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/whatsApp"
+        android:textColor="#000"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/txtView_Viber"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_Viber" />
+
+    <TextView
+        android:id="@+id/txtView_Imo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/imo"
+        android:textColor="#000"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="@+id/txtView_WhatsApp"
+        app:layout_constraintTop_toBottomOf="@+id/txtView_WhatsApp" />
+
+    <Switch
+        android:id="@+id/switch_Messenger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:theme="@style/SwitchTheme"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView_Messenger"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtView_Messenger" />
+
+    <Switch
+        android:id="@+id/switch_Instagram"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView_Instagram"
+        app:layout_constraintEnd_toEndOf="@+id/switch_Messenger"
+        app:layout_constraintTop_toTopOf="@+id/txtView_Instagram" />
+
+    <Switch
+        android:id="@+id/switch_Skype"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView_Skype"
+        app:layout_constraintEnd_toEndOf="@+id/switch_Instagram"
+        app:layout_constraintTop_toTopOf="@+id/txtView_Skype" />
+
+    <Switch
+        android:id="@+id/switch_Viber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView_Viber"
+        app:layout_constraintEnd_toEndOf="@+id/switch_Skype"
+        app:layout_constraintTop_toTopOf="@+id/txtView_Viber" />
+
+    <Switch
+        android:id="@+id/switch_WhatsApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView_WhatsApp"
+        app:layout_constraintEnd_toEndOf="@+id/switch_Viber"
+        app:layout_constraintTop_toTopOf="@+id/txtView_WhatsApp" />
+
+    <Switch
+        android:id="@+id/switch_Imo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView_Imo"
+        app:layout_constraintEnd_toEndOf="@+id/switch_WhatsApp"
+        app:layout_constraintTop_toTopOf="@+id/txtView_Imo" />
+
+    <TextView
+        android:id="@+id/txtView_Skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="25dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/skip"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/txtView_Imo" />
+
+    <ImageView
+        android:id="@+id/imgView_Start"
+        android:layout_width="@dimen/_60sdp"
+        android:layout_height="@dimen/_60sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_35sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/group479" />
+</androidx.constraintlayout.widget.ConstraintLayout>

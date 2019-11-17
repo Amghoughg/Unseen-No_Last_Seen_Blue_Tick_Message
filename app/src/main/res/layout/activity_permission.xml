@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.PermissionActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgView_Group490"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_70sdp"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:layout_marginEnd="@dimen/_70sdp"
+        android:layout_marginBottom="@dimen/_310sdp"
+        android:scaleType="fitEnd"
+        android:src="@drawable/group490"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgView_Group87"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="@dimen/_35sdp"
+        android:layout_marginEnd="@dimen/_38sdp"
+        android:src="@drawable/group87"
+        app:layout_constraintEnd_toEndOf="@+id/imgView_Group490"
+        app:layout_constraintStart_toStartOf="@+id/imgView_Group490"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_Group490" />
+
+    <TextView
+        android:id="@+id/txtView_permission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fonarto"
+        android:gravity="center_horizontal"
+        android:text="@string/startText"
+        android:textColor="#000"
+        android:textSize="@dimen/_10ssp"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="@+id/imgView_Group490"
+        app:layout_constraintStart_toStartOf="@+id/imgView_Group490"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_Group87" />
+
+    <TextView
+        android:id="@+id/txtView_PoweredBy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/powerdBy"
+        android:textColor="@color/lightGrey"
+        android:textSize="@dimen/_7ssp"
+        app:layout_constraintBottom_toTopOf="@+id/txtView_PrivacyPolicy"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_CompanyName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
+        android:fontFamily="@font/fonarto"
+        android:linksClickable="true"
+        android:clickable="true"
+        android:text="@string/companyName"
+        android:textColor="@color/redish"
+        android:textColorLink="@color/redish"
+        android:textSize="@dimen/_7ssp"
+        app:layout_constraintStart_toEndOf="@+id/txtView_PoweredBy"
+        app:layout_constraintTop_toTopOf="@+id/txtView_PoweredBy" />
+
+    <TextView
+        android:id="@+id/underLine"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:height="2dp"
+        android:background="#000"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toTopOf="@+id/txtView_PrivacyPolicy"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CompanyName"
+        app:layout_constraintStart_toStartOf="@+id/textView_CompanyName"
+        app:layout_constraintTop_toBottomOf="@+id/textView_CompanyName" />
+
+    <TextView
+        android:id="@+id/txtView_PrivacyPolicy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/privacyPolicy"
+        android:textColor="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CompanyName"
+        app:layout_constraintStart_toStartOf="@+id/txtView_PoweredBy" />
+
+    <TextView
+        android:id="@+id/txtView_rights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/fonarto"
+        android:text="@string/rights"
+        android:textColor="@color/lightGrey"
+        android:textSize="@dimen/_7ssp"
+        app:layout_constraintBottom_toTopOf="@+id/txtView_PoweredBy"
+        app:layout_constraintEnd_toEndOf="@+id/textView_CompanyName"
+        app:layout_constraintStart_toStartOf="@+id/txtView_PoweredBy" />
+
+    <ImageView
+        android:id="@+id/imgView_Start"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        app:layout_constraintBottom_toTopOf="@+id/txtView_rights"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/start" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

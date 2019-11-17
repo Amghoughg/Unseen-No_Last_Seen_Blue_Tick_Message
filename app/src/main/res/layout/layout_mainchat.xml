@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/constraintLayoutMain">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgView_MainAvatar"
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:src="@drawable/manavatar"
+        app:civ_border_color="#4a148c"
+        app:civ_border_width="@dimen/_2sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </de.hdodenhof.circleimageview.CircleImageView>
+
+    <TextView
+        android:id="@+id/txtView_MainTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_14sdp"
+        android:fontFamily="@font/fonarto"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:text="Adeel Ali:"
+        android:textColor="#000"
+        android:textSize="@dimen/_11ssp"
+        app:layout_constraintBottom_toBottomOf="@+id/imgView_MainAvatar"
+        app:layout_constraintEnd_toStartOf="@+id/txtView_MainCounter"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/imgView_MainAvatar"
+        app:layout_constraintTop_toTopOf="@+id/imgView_MainAvatar" />
+
+    <TextView
+        android:id="@+id/txtView_MainCounter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_13sdp"
+        android:fontFamily="@font/fonarto"
+        android:text="(23)"
+        android:textColor="@color/redish"
+        app:layout_constraintBottom_toBottomOf="@+id/txtView_MainTitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/txtView_MainTitle" />
+</androidx.constraintlayout.widget.ConstraintLayout>

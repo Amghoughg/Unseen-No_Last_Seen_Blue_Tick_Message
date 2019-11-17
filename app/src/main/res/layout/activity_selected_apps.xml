@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SelectedApps">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_dull"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:elevation="@dimen/_20sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgView_rectangle2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/rectangle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.65"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--<androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#FFF"
+        app:layout_constraintBottom_toTopOf="@+id/appCompatImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/appCompatImageView2" />-->
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgView_group491"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/group491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginTop="@dimen/_35sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_group491"
+        app:layout_constraintBottom_toTopOf = "@id/linearLayoutCompat"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        app:layout_constraintEnd_toEndOf="@+id/viewPager"
+        app:layout_constraintStart_toStartOf="@+id/viewPager"
+        app:layout_constraintTop_toBottomOf="@+id/viewPager"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtn_Proceed">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/indicator1"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_6sdp"
+            android:background="@null"
+            android:src="@drawable/selected_indicator"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="400dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/indicator2"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@null"
+            android:src="@drawable/default_indicator"
+            app:layout_constraintBottom_toBottomOf="@+id/indicator1"
+            app:layout_constraintTop_toTopOf="@+id/indicator1"
+            tools:layout_editor_absoluteX="162dp" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/indicator3"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_6sdp"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@null"
+            android:src="@drawable/default_indicator"
+            app:layout_constraintBottom_toBottomOf="@+id/indicator2"
+            app:layout_constraintTop_toTopOf="@+id/indicator2"
+            tools:layout_editor_absoluteX="189dp" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/imgView_rectangle4"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="@dimen/_170sdp"
+        android:background="@drawable/rectangle4"
+        android:elevation="@dimen/_22sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="@+id/imgView_rectangle2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_rectangle2">
+
+        <ImageButton
+            android:id="@+id/imgView_Messenger"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/group480"
+            app:layout_constraintEnd_toStartOf="@+id/imgView_Instagram"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtView_MessengerMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonarto"
+            android:text="@string/messenger"
+            android:textColor="#000"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="@+id/imgView_Messenger"
+            app:layout_constraintStart_toStartOf="@+id/imgView_Messenger"
+            app:layout_constraintTop_toBottomOf="@+id/imgView_Messenger" />
+
+        <ImageButton
+            android:id="@+id/imgView_Instagram"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/group481"
+            app:layout_constraintBottom_toBottomOf="@+id/imgView_Messenger"
+            app:layout_constraintEnd_toStartOf="@+id/imgView_Skype"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgView_Messenger"
+            app:layout_constraintTop_toTopOf="@+id/imgView_Messenger" />
+
+        <TextView
+            android:id="@+id/txtView_InstagramMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonarto"
+            android:text="@string/instagram"
+            android:textColor="#000"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="@+id/imgView_Instagram"
+            app:layout_constraintStart_toStartOf="@+id/imgView_Instagram"
+            app:layout_constraintTop_toBottomOf="@+id/imgView_Instagram" />
+
+        <ImageButton
+            android:id="@+id/imgView_Skype"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/group482"
+            app:layout_constraintBottom_toTopOf="@+id/txtView_InstagramMain"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/imgView_Instagram"
+            app:layout_constraintTop_toTopOf="@+id/imgView_Instagram" />
+
+        <TextView
+            android:id="@+id/txtView_skypeMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonarto"
+            android:text="@string/skype"
+            android:textColor="#000"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="@+id/imgView_Skype"
+            app:layout_constraintStart_toStartOf="@+id/imgView_Skype"
+            app:layout_constraintTop_toBottomOf="@+id/imgView_Skype" />
+
+        <ImageButton
+            android:id="@+id/imgView_Viber"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_15sdp"
+            android:background="#00FFFFFF"
+            android:scaleType="fitXY"
+            android:src="@drawable/group485"
+            app:layout_constraintBottom_toBottomOf="@+id/imgView_rectangle4"
+            app:layout_constraintStart_toStartOf="@+id/imgView_Messenger"
+            app:layout_constraintTop_toBottomOf="@+id/imgView_Messenger" />
+
+        <TextView
+            android:id="@+id/txtView_ViberMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonarto"
+            android:text="@string/viber"
+            android:textColor="#000"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="@+id/imgView_Viber"
+            app:layout_constraintStart_toStartOf="@+id/imgView_Viber"
+            app:layout_constraintTop_toBottomOf="@+id/imgView_Viber" />
+
+        <ImageButton
+            android:id="@+id/imgView_WhatsApp"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/group484"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imgView_Viber"
+            app:layout_constraintEnd_toStartOf="@+id/imgView_Imo"
+            app:layout_constraintStart_toEndOf="@+id/imgView_Viber"
+            app:layout_constraintTop_toTopOf="@+id/imgView_Viber" />
+
+        <TextView
+            android:id="@+id/txtView_WhatsAppMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonarto"
+            android:text="@string/whatsApp"
+            android:textColor="#000"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="@+id/imgView_WhatsApp"
+            app:layout_constraintStart_toStartOf="@+id/imgView_WhatsApp"
+            app:layout_constraintTop_toBottomOf="@+id/imgView_WhatsApp" />
+
+        <ImageButton
+            android:id="@+id/imgView_Imo"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:scaleType="fitXY"
+            android:src="@drawable/group483"
+            android:background="#00FFFFFF"
+            app:layout_constraintBottom_toBottomOf="@+id/imgView_WhatsApp"
+            app:layout_constraintEnd_toEndOf="@+id/imgView_Skype"
+            app:layout_constraintTop_toTopOf="@+id/imgView_WhatsApp" />
+
+        <TextView
+            android:id="@+id/txtView_ImoMain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/fonarto"
+            android:text="@string/imo"
+            android:textColor="#000"
+            android:textSize="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="@+id/imgView_Imo"
+            app:layout_constraintStart_toStartOf="@+id/imgView_Imo"
+            app:layout_constraintTop_toBottomOf="@+id/imgView_Imo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageButton
+        android:id="@+id/imgBtn_Proceed"
+        android:elevation="@dimen/_22sdp"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/group487"
+        app:layout_constraintBottom_toTopOf="@+id/imgView_rectangle4"
+        app:layout_constraintEnd_toEndOf="@+id/imgView_rectangle4"
+        app:layout_constraintStart_toStartOf="@+id/imgView_rectangle4"
+        app:layout_constraintTop_toTopOf="@+id/imgView_rectangle4" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgBtn_Delete"
+        android:elevation="@dimen/_22sdp"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:scaleType="fitXY"
+        android:src="@drawable/group486"
+        app:layout_constraintEnd_toEndOf="@+id/imgView_rectangle4"
+        app:layout_constraintStart_toStartOf="@+id/imgView_rectangle4"
+        app:layout_constraintTop_toBottomOf="@+id/imgView_rectangle4" />
+
+    <TextView
+        android:id="@+id/deleteMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toast_shape"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:text="@string/DeleteMessage"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/fonarto"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtn_AddApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn_Delete" />
+    <TextView
+        android:id="@+id/AddAppMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/toast_shape"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:text="@string/AddAppMessage"
+        android:textColor="#FFF"
+        android:textSize="@dimen/_9sdp"
+        android:fontFamily="@font/fonarto"
+        app:layout_constraintBottom_toTopOf="@+id/imgBtn_AddApp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgBtn_Delete" />
+
+    <ImageButton
+        android:id="@+id/imgBtn_AddApp"
+        android:layout_width="@dimen/_110sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="#00FFFFFF"
+        android:scaleType="fitXY"
+        android:src="@drawable/group488"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

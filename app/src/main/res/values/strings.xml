@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Unseen - No Last Seen Blue Tick Message</string>
+    <string name="startText">Read Messages Without Knowing</string>
+    <string name="privacyPolicy">Privacy Policy</string>
+    <string name="powerdBy">Powered by </string>
+    <string name="companyName"><a style="text-decoration: none;" href="https://play.google.com/store/apps/developer?id=Deep+Learn+Studio+App">Deep Learn Studio Apps</a></string>
+    <string name="companyLink">https://play.google.com/store/apps/developer?id=Deep+Learn+Studio+App</string>
+    <string name="rights">All rights reserved 2019</string>
+    <string name="proceed">Before you proceed!</string>
+    <string name="selectApps">Please Select Apps which will appear on main screen</string>
+    <string name="messenger">Messenger</string>
+    <string name="instagram">Instagram</string>
+    <string name="skype">Skype</string>
+    <string name="viber">Viber</string>
+    <string name="whatsApp">WhatsApp</string>
+    <string name="imo">Imo</string>
+    <string name="skip">Skip</string>
+    <string name="Exit">Exit</string>
+    <string name="selectApps2">Select Apps</string>
+    <string name="markApps">Mark or unmark from here!</string>
+
+    <string name="notification_listener_service">"Notification Listener Service"</string>
+    <string name="notification_listener_service_explanation">"For this App to work you need to enable the Notification Listener Service. Enable it now?"</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <string name="MessengerPackageName">com.facebook.orca</string>
+    <string name="WhatsAppPackageName">com.whatsapp</string>
+    <string name="ImoPackageName">com.imo.android.imoim</string>
+    <string name="InstagramPackageName">com.instagram.android</string>
+    <string name="ViberPackageName">com.viber.voip</string>
+    <string name="SkypePackageName">com.skype.raider</string>
+    <string name="DeleteMessage">You can get them back by clicking on add button</string>
+    <string name="Yes">Yes</string>
+    <string name="No">No</string>
+    <string name="RateUs">Rate Us</string>
+    <string name="ExitMsg">Hope to see you again !</string>
+    <string name="AddAppMessage">Click "+" icon to add apps </string>
+</resources>
